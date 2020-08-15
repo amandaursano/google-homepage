@@ -1,0 +1,134 @@
+/* CSS Styles */
+html {
+    height: 100%;
+}
+
+a {
+    color: #1a0dab;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    padding-left: 15px;
+    color: #000;
+    opacity: 0.75;
+    display: flex;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    display: grid;
+    height: 100%;
+    color: #5f6368;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    border-bottom-color: rgb(0, 0, 0);
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-repeat: stretch;
+}
+
+header {
+    display: flex;
+    align-self: flex-start;
+}
+
+ul {
+    margin: 0 0 0 27px;
+}
+
+footer {
+    display: flex;
+    align-self: flex-end;
+    background-color: #f2f2f2;
+    padding: 12px 0 12px 0;
+}
+
+img {
+    height: 92px;
+    width: 272px;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 11px 4px;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+}
+
+button:hover {
+    border: 1px solid #b2b2b2;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+}
+
+.top-left {
+    display: flex;
+    justify-self: flex-start;
+}
+
+.top-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.google-logo {
+    padding-top: 80px;
+    width: 272px;
+    height: 92px;
+    margin: auto;
+}
+
+.search-icon {
+    height: 20px;
+    width: 20px;
+    opacity: 40%;
+}
+
+.voice-icon {
+    height: 20px;
+    width: 20px;
+    opacity: 45%;
+}
+
+.search-bar-div {
+    height: 30px;
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 16px;
+    padding-left: 14px;
+    border-color: #222;
+    border-style: solid;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+
+.bottom-left-nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bottom-right-nav {
+    display: flex;
+    justify-self: flex-end;
+}
+
+#app-icon {
+    height: 30px;
+    width: 30px;
+}
+
+#profile-image {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}

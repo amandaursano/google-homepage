@@ -5,41 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Google</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css" style="text/css" media="all">
+    <link rel="stylesheet" href="css/main.css" style="text/css" media="all">
 </head>
 
 <body>
     <header>
-        <nav class="top-nav">
-            <li>
-                <ul>
-                    <a class="top-nav-link" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
-                </ul>
-                <ul>
-                    <a class="top-nav-link" href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
-                </ul>
-                <ul>
-                    <a class="top-nav-link" href="https://mail.google.com/mail/?tab=wm&authuser=0&ogbl">Gmail</a>
-                </ul>
-                <ul>
-                    <img class="apps-icon" src="images/app-icon.png" alt="Google Apps Icon">
-                </ul>
-                <ul>
-                    <img class="profile-image" src="images/profile-image.jpg" alt="User Profile Image">
-                </ul>
-            </li>
+        <nav class="nav">
+            <div class="top-left">
+                <li>
+                    <ul>
+                        <a class="nav-link" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+                    </ul>
+                    <ul>
+                        <a class="nav-link" href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+                    </ul>
+                </li>
+            </div>
+            <div class="top-right">
+                <li>    
+                    <ul>
+                        <a class="nav-link" href="https://mail.google.com/mail/?tab=wm&authuser=0&ogbl">Gmail</a>
+                    </ul>
+                    <ul>
+                        <img class="nav-link" id="app-icon" src="images/app-icon.png" alt="Google Apps Icon">
+                    </ul>
+                    <ul>
+                        <img class="nav-link" id="profile-image" src="images/profile-image.jpg" alt="User Profile Image">
+                    </ul>
+                </li>
+            </div>
         </nav>
     </header>
+
     <main>
         <a href="https://google.com" alt="Google Homepage">
             <img class="google-logo" src="images/google-logo.png" alt="Google Logo">
         </a>
         <form>
-            <input class="search-bar">
                 <div class="search-bar-div">
                     <img class="search-icon" src="images/search-icon.png" alt="Search Icon">
-                    <input type="text">
+                    <input type="text" class="search-bar">
                     <img class="voice-icon" src="images/voice-search.png" alt="Voice Search Icon">
                 </div>
                 <div class="button-div">
@@ -50,13 +56,15 @@
     </main>
 
     <footer>
-        <div class="footer-div">
+        <div class="bottom-left-nav">
             <li class="bottom-left-nav">
                 <ul>Advertising</ul>
                 <ul>Business</ul>
-                <ul>How Search Works</ul>
+                <ul>How Search works</ul>
             </li>
-            <li class="bottom-right-nav">
+        </div>
+        <div class="bottom-right-nav">
+        <li class="bottom-right-nav">
                 <ul>Privacy</ul>
                 <ul>Terms</ul>
                 <ul>Settings</ul>
