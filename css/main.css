@@ -21,6 +21,7 @@ a:hover {
 body {
     display: grid;
     height: 100%;
+    min-width: 980px;
     color: #5f6368;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -33,18 +34,26 @@ body {
 
 header {
     display: flex;
+    flex-direction: column;
     align-self: flex-start;
+    padding: 10px 0 0 0;
+}
+
+li {
+    display: flex;
 }
 
 ul {
-    margin: 0 0 0 27px;
+    margin: 0 0 0 14px;
 }
 
 footer {
     display: flex;
     align-self: flex-end;
+    flex-direction: column;
     background-color: #f2f2f2;
     padding: 12px 0 12px 0;
+    align-content: space-between;
 }
 
 img {
@@ -54,12 +63,17 @@ img {
 
 input {
     border: none;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
 }
 
 button {
     padding: 8px 16px;
     color: #5f6368;
-    margin: 28px 4px;
+    margin: 28px 8px;
     font-size: 14px;
     background-color: #f2f2f2;
     border: 1px solid #f2f2f2;
@@ -78,12 +92,15 @@ button:hover {
 .top-left {
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
+    margin: 14px 0 -14px 0;
 }
 
 .top-right {
     display: flex;
     justify-self: flex-end;
     justify-content: flex-end;
+    margin: 0 30px 0 0;
 }
 
 .google-logo {
@@ -95,57 +112,72 @@ button:hover {
 }
 
 .search-bar-div {
-    height: 34px;
-    width: 400px;
+    height: 40px;
+    width: 482px;
     flex: 1;
     display: flex;
-    padding: 8px 8px 0 16px;
-    padding-left: 14px;
+    padding: 4px 8px 4px 14px;
     border: 0.75px solid #b2b2b2;
     border-radius: 30px;
     justify-content: center;
     margin: auto;
 }
 
+.search-bar-div:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 6px #b2b2b2;
+}
+
 .search-icon {
+    display: flex;
+    align-self: center;
     height: 20px;
     width: 20px;
     opacity: 40%;
+    padding-right: 6px;
 }
 
 .search-bar {
-    height: 34px;
-    width: 387px;
+    height: 32px;
+    width: 430px;
     display: flex;
+    align-self: center;
     justify-self: center;
-    color: transparent;
     border: none;
-    margin: -8px 0 0 0;
+    margin-top: 
 }
 
 .voice-icon {
     height: 20px;
     width: 20px;
     opacity: 45%;
+    display: flex;
+    align-self: center;
 }
 
 .bottom-left-nav {
     display: flex;
     justify-content: flex-start;
+    margin: 0 0 -7px 0;
 }
 
 .bottom-right-nav {
     display: flex;
     justify-self: flex-end;
+    justify-content: flex-end;
+    padding: 0 30px 0 0;
 }
 
 #app-icon {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
+    margin: -6px 0 0 10px;
+    opacity: 70%
 }
 
 #profile-image {
-    height: 30px;
-    width: 30px;
+    height: 31px;
+    width: 31px;
     border-radius: 50%;
+    margin: -8px 0 0 10px;
 }
